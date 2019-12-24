@@ -1,0 +1,419 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    p{
+        margin: 0;
+    }
+    button{
+        &:focus{
+            outline: none;
+        }
+    }
+    select{
+        &:focus{
+            outline: none;
+        }
+    }
+    input{
+        &:focus{
+            outline: none;
+        }
+    }
+}
+
+
+// Header
+
+#Header{
+    background: #ededed;
+    padding: 5px 0;
+    a{
+        font-size: 14px;
+        color: #5d5d5d;
+        text-decoration: none;
+    }
+     .elaqe{
+        margin: 0 15px;
+    }
+    .dropdown{
+        position: relative;
+        display: inline-block;
+        p{
+            font-size: 14px;
+            color: #5d5d5d;
+        }
+        &:hover{
+            .drop-content{
+                visibility: visible;
+                top: 25px;
+            }
+        }
+        .drop-content{
+            position: absolute;
+            top: 40px;
+            z-index: 999;
+            left: 0;
+            border-radius: 7px;
+            transition: all .2s ease-in-out;
+            padding-left: 10px;
+            background: #fff;
+            text-align: left;
+            min-width: 90px;
+            visibility: hidden;
+            a{
+                display: block;
+                text-decoration: none;
+                font-size: 12px;
+                font-weight: bold;
+                padding: 5px 0;
+                img{
+                    width: 20%;
+                }
+                span{
+                    padding-left: 7px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+
+
+// Header2
+
+#Header2{
+    padding: 30px 0;
+    .col-lg-1{
+        i{
+            font-size: 22px;
+            color: #5d5d5d;
+        }
+    }
+    .search-area{
+        text-align: center;
+        padding-top: 9px;
+        input{
+            border: none;
+            border-radius: 7px;
+            color: #4267B2;
+            padding: 5px 0px 5px 10px;
+            &:focus{
+                outline: none;
+            }
+        }
+        i{
+            background: #ededed;
+            padding: 9px;
+            cursor: pointer;
+            border-top-right-radius: 7px;
+            border-bottom-right-radius: 7px;
+            margin-left: -16px;
+            color: #4267b2;
+        }
+    }
+    .dropdown{
+        position: relative;
+        display: inline-block;
+        p{
+            font-size: 14px;
+            color: #5d5d5d;
+        }
+        &:hover{
+            .drop-content{
+                visibility: visible;
+                top: 25px;
+            }
+        }
+        .dropbtn{
+            i{
+                font-size: 22px;
+                color: #5d5d5d;
+            }
+            span{
+                font-size: 15px;
+                font-weight: bold;
+                padding-left: 6px;
+            }
+        }
+        .drop-content{
+            position: absolute;
+            top: 40px;
+            left: 25px;
+            border-radius: 5px;
+            transition: all .2s ease-in-out;
+            padding-left: 10px;
+            background: #fff;
+            text-align: left;
+            border: 1px solid #ededed;
+            min-width: 90px;
+            visibility: hidden;
+            p{
+                font-size: 12px;
+                font-weight: bold;
+                padding: 5px 0;
+                cursor: pointer;
+                img{
+                    width: 20%;
+                }
+                span{
+                    padding-left: 7px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .sellProd{
+        a{
+            background: #ff6767;
+            color: #fff;
+            font-size: 16px;
+            border-radius: 3px;
+            padding: 7px 21px;
+            font-weight: 600;
+            text-decoration: none;
+            border: 1px solid #ff6767;
+            transition: all .2s ease-in-out;
+            &:hover{
+                border: 1px solid #ff6767;
+                color: #ff6767;
+                background: transparent;
+            }
+        }
+    }
+}
+
+
+// Category
+ 
+#Category {
+    background: #ff6000;
+    padding: 15px 0;
+    .col-lg-2{
+        text-align: center;
+        p{
+            color: #fff;
+            font-size: 16px;
+            font-weight: bold;
+            border-right: 1px solid #fff;
+            border-left: 1px solid #fff;
+        }
+    }
+}
+
+
+
+// Slider 
+
+#Slider{
+    background: #ededed;
+    padding: 3rem 0;
+}
+
+
+// Elan
+
+#Elan{
+    background: #ededed;
+    padding-bottom: 3rem;
+    .elan-qutu{
+        .category-box{
+            border: 1px solid #868686;
+            padding: 0;
+            .category-top{
+                background: #4267B2;
+                color: #Fff;
+                text-align: center;
+                padding: 13px 0 10px 0;
+                span{
+                    padding-left: 10px;
+                    font-size: 21px;
+                }
+            }
+            .category-bottom{
+                background: #e6e5e5;
+                .category-bottom-box{
+                    border-top: 1px solid #868686;
+                    padding: 10px 0;
+                    cursor: pointer;
+                    &:hover i{
+                        transform: translateX(10px);
+                        transition: transform .3s ease-in-out;
+                    }
+                    i{
+                        padding-left: 7px;
+                    }
+                    span{
+                        font-weight: bold;
+                        font-size: 14px;
+                        margin-bottom: 0;
+                        padding-top: 15px;
+                        padding-left: 6px;
+                    }
+                }
+               
+            }
+        }
+        .elan-all{
+            padding: 0 15px;
+            background: #fff;
+                border-radius: 10px;
+                box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.26);
+            .elan-top{
+                background: transparent;
+                text-align: left;
+                padding: 0 25px 5px 25px;
+                border-bottom: 1px solid #c1c1c1;
+                position: relative;
+                ::after{
+                    position: absolute;
+                    content: '';
+                    height: 3px;
+                    width: 100px;
+                    bottom: 0;
+                    left: 27px;
+                    background: #ff6000;
+                    
+                }
+                h2{
+                    font-size: 23px;
+                    font-weight: 600;
+                    line-height: 30px;
+                    color: #3c3c3c;
+                    margin-bottom: 0;
+                    margin-top: 15px;
+                }
+                a{
+                    text-decoration: none;
+                    color: #484848;
+                    cursor: pointer;
+                    font-weight: 600;
+                    padding-top: 23px;
+                    margin: 0 8rem 0 0;
+                    &:hover{
+                        color: #4267B2;
+                    }
+                }
+            }
+            .elan-asagi{
+                padding-top: 30px;
+                padding: 17px;
+            }
+            .elan-box{
+                border: 2px solid #e6e5e5;
+                padding: 0 10px;
+                border-right: none;
+                position: relative;
+                .overlay{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: #ff6000;
+                }
+                .elan-tops{
+                    position: relative;
+                    .price{
+                        position: absolute;
+                        bottom: 0px;
+                        right: 0;
+                        margin: 0;
+                        padding: 0 9px 0 0;
+                        text-align: right;
+                        p{
+                            background: #fff;
+                            padding: 4px 9px;
+                            font-weight: 700;
+                        }
+                        i{
+                            color: gold;
+                            font-size: 24px;
+                        }
+                    }
+                    .latest-tag{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        background: #4267B2;
+                        clip-path: polygon(0 15%, 75% 15%, 100% 50%, 75% 85%, 0 85%);
+                        P{
+                            padding: 16px 22px 0px 9px;
+                            font-weight: bold;
+                            font-size: 18px;
+                            color: #fff;
+                        }
+                    }
+                }
+                .elan-down{
+                    padding-bottom: 20px;
+                    .product-name{
+                        padding: 8px 0px;
+                        p{
+                            margin: 0;
+                            font-size: 18px;
+                            font-weight: 700;
+                        }
+                    }
+                }
+                .elan-bottom{
+                    p{
+                        font-size: 15px;
+                        font-weight: 800;
+                        text-align:  center;
+                    }
+                    .city{
+                        font-size: 18px;
+                        font-weight: 800;
+                        text-align:  center;
+                        span{
+                            font-size: 20px;
+                        }
+                    }
+                    h6{
+                        margin: 0;
+                        text-align: center;
+                        background: #898F9C;
+                        color: #fff;
+                        padding: 9px 0px;
+                        border-radius: 5px;
+                    
+                    }
+                }
+                .elan-date{
+                    p{
+                        margin: 0;
+                        font-size: 13px;
+                        font-weight: bold;
+                        padding-bottom: 7px;
+                        font-style: italic;
+                    }
+                }
+                .elan-bottom1{
+                    a{
+                        color: #fff;
+                        text-decoration: none;
+                    }
+                    button{
+                        background: #4267B2;
+                        color: #fff;
+                        border: none;
+                        padding: 4px 10px;
+                        transition: all .3s ease-in-out;
+                        &:hover{
+                            border-top-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            background: #898F9C;
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+    
+}
